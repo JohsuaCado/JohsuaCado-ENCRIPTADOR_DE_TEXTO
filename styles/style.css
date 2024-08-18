@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+:root{
+    --color-uno:hsl(180, 100%, 42%);
+    --color-dos:#210fc7;
+    --color-tres:#ffffff;
+    --color-cuatro:#000000;
+    --fuente-inter:"Inter", sans-serif;
+}
+
+
+body {
+    margin: 0 auto;
+    position: relative;
+    height: 1074px;
+    background: linear-gradient(rgb(0, 153, 255), rgba(109, 243, 131, 0.897));
+}
+
+header{
+    padding: 40px 0 0 84px;
+}
+
+section{
+    width: 840px;
+    height: 200px;
+}
+
+h1{
+    top: 125px;
+    position: absolute;
+    left: 140px;
+    width: 840px;
+    height: 200px;
+    color: var(--color-cuatro);
+    font-family: var(--fuente-inter);
+    font-size: 35px;
+}
+
+textarea{
+    border: none;
+}
+
+textarea:focus{
+    border: none;
+    outline: none;
+}
+
+.texto{
+    position: absolute;
+    padding-right: 1%;
+    width: 690px;
+    height: 600px;
+    left: 140px;
+    top: 168px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: var(--color-dos);
+    background:var(--color-tres);
+    font-family: var(--fuente-inter);
+    resize: none;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 1);
+    border-radius: 30px;
+}
+
+.texto:focus{
+    border: none;
+    outline: none;
+}
+
+.texto::placeholder {
+    color: var(--color-dos);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    font-family: var(--fuente-inter);
+}
+
+.img_sugerencia {
+    position: absolute;
+    width: 229px;
+    left: 140px;
+    top: 851px;
+    gap: 8px;
+}
+
+.contenedor_botones{
+    position: absolute;
+    left: 140px;
+    top: 870px;
+    gap: 24px;
+    display: flex;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 1);
+
+}
+
+.encriptador{
+    background: var(--color-dos);
+    border-radius: 24px;
+    text-align: center;
+    width: 328px;
+    padding: 24px;
+    gap: 8px;
+    height: 67px;
+    color: var(--color-cuatro);
+    font-family: var(--fuente-inter);
+    font-size: 16px;
+}
+
+.desencriptador{
+    background: var(--color-uno);
+    border-radius: 24px;
+    border: 1px solid var(--color-dos);
+    text-align: center;
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    gap: 8px;
+    color:var(--color-dos);
+    font-family: var(--fuente-inter);
+    font-size: 16px;
+}
+
+#rtc_else{
+    display: inline;
+}
+
+#rtc_if{
+    display : none;
+}
+
+.rtc{
+    position: absolute;
+    left: 900px;
+    top: 40px;
+    width: 400px;
+    height: 900px;
+    border-radius: 32px;
+    background: var(--color-tres);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 1);
+}
+
+#rtc_else img{
+   width: 336px;
+   left: 32px;
+   height: 304px;
+   top: 243px;
+   position: absolute;
+}
+
+#rtc_else h2{
+    position: absolute;
+    width: 336px;
+    height: 48px;
+    left: 32px;
+    top: 619px;
+    font-size: 24px;
+    font-family: var(--fuente-inter);
+    text-align: center;
+    color: var(--color-cuatro);
+}
+
+#rtc_else p{
+    position: absolute;
+    width: 336px;
+    height: 48px;
+    left: 32px;
+    top: 693px;
+    font-size: 16px;
+    font-family: var(--fuente-inter);
+    color: var(--color-cuatro);
+    text-align: center;
+}
+
+
+
+#rtc_if textarea{
+    position: absolute;
+    top: 40px;
+    width: 336px;
+    height: 761px;
+    font-family:var(--fuente-inter);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--color-cuatro);
+    resize: none;
+}
+
+.copiar{
+    position: absolute;
+    top: 800px;
+    box-sizing: border-box;
+    width: 328px;
+    height: 67px;
+    left: 32px;
+    border-radius: 24px;
+    border: 1px solid var(--color-dos);
+    background: var(--color-uno);
+    padding: 24px;
+    gap: 8px;
+    color:var(--color-dos);
+    font-family: var(--fuente-inter);
+    font-size: 16px;
+}
+
