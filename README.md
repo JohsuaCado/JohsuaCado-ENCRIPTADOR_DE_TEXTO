@@ -1,0 +1,1 @@
+# JohsuaCado-ENCRIPTADOR_DE_TEXTO
