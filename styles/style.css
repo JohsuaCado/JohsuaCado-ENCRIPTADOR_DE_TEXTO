@@ -24,7 +24,13 @@ body {
 }
 
 header{
-    padding: 40px 0 0 84px;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+}
+
+.img{
+
 }
 
 section{
@@ -221,3 +227,172 @@ button {
     font-size: 16px;
 }
 
+footer{
+    position: absolute;
+    top: 1050px;
+    left: 700px;
+    width: 328px;
+
+}
+
+@media(max-width:768px){
+
+    .texto{
+        width: 695px;
+        height: 500px;
+        left: 40px;
+    }
+
+    .img_sugerencia{
+        left: 40px;
+        top: 700px;
+    }
+
+    .contenedor_botones{
+        left: 40px;
+        top: 730px;
+    }
+
+    .rtc{
+        left: 40px;
+        top: 860px;
+        width: 695px;
+        height: 133px;
+    }
+
+    #rtc_else{
+        display: inline;
+    }
+    
+    #rtc_if{
+        display : none;
+    }
+
+    .rtc img{
+        display: none;
+    }
+
+    #rtc_else h2{
+        width: 700px;
+        top:5px;
+        left: 5px;
+    }
+
+    #rtc_else p{
+        width: 700px;
+        top:50px;
+        left: 5px;
+    }
+
+    #rtc_if textarea{
+        top: 1px;
+        width: 695px;
+        height: 90px;
+        border-radius: 32px;
+        height:143px;
+    }
+
+    .copiar{
+        top: 145px;
+        left: 170px;
+    }
+
+    footer{
+        display: none;
+    }
+    
+}
+
+@media(max-width:375px){
+
+    body{
+        background: #0ba89b;
+    }
+
+    h1{
+        top: 110px;
+        position: absolute;
+        left: 10px;
+        width: 840px;
+        height: 200px;
+        color: var(--color-cuatro);
+        font-family: var(--fuente-inter);
+        font-size: 20px;
+    }
+
+    .texto{
+        position: absolute;
+        top: 140px;
+        width: 280px;
+        height: 250px;
+        left: 10px;
+    }
+
+    .img_sugerencia{
+        left: 10px;
+        top: 420px;
+    }
+
+    .contenedor_botones{
+        left: 10px;
+        top: 450px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .encriptador{
+        width: 280px;
+    }
+    
+    .desencriptador{
+        width: 280px;
+    }
+
+    .rtc{
+        left: 10px;
+        top: 630px;
+        width: 280px;
+        height: 186px;
+    }
+
+    #rtc_else{
+        display: inline;
+    }
+    
+    #rtc_if{
+        display : none;
+    }
+
+    .rtc img{
+        display: none;
+    }
+
+    #rtc_else h2{
+        width: 280px;
+        top:30px;
+        left: 5px;
+    }
+
+    #rtc_else p{
+        width: 280px;
+        top:90px;
+        left: 0.1px;        
+    }
+
+    #rtc_if textarea{
+        top: 1px;
+        width: 280px;
+        height: 186px;
+        border-radius: 32px;
+    }
+
+    .copiar{
+        top: 200px;
+        left: 0.01px;
+        width: 280px;
+    }
+
+    footer{
+        display: none;
+    }
+}
