@@ -1,0 +1,50 @@
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Encriptador de texto</title>
+    <title>Challenge Encriptador</title>
+</head>
+<body>
+    <header>
+        <img src="assets/Logo.png" alt="Logo_Alura">
+    </header>
+    <main>
+        <section>
+
+            <div>
+                <h1></h1>
+                <textarea class="texto" id="texto" rows="15" cols="10" 
+                placeholder="Ingrese el texto aqui"></textarea>
+            </div>    
+
+            <div class="img_sugerencia">    
+                    <img src="assets/Frame 1.png" alt="Imagen_De_Sugerencia">  
+            </div>
+
+            <div class="contenedor_botones">
+                <button onclick="encriptarTexto()" class="encriptador" id="encriptador">Encriptar</button>
+                <button onclick="desencriptarTexto()" class="desencriptador" id="desencriptador">Desencriptar</button>
+            </div>
+
+        </section>
+        
+        <aside>        
+            <div class="rtc" id="rtc_else">
+                <img class="Muñeco_png" src="assets/Muñeco.png">
+                <h2 class="titulo2">Ningún mensaje fue encontrado</h2>
+                <p class="texto_rdo">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="rtc" id="rtc_if">
+                <textarea id="texto_encryp" rows="25" cols="15"></textarea>
+                <button onclick="copiarTexto()" class="copiar" id="copiar">Copiar</button>
+            </div>
+        </aside>
+
+        <footer>
+            <p></p>
+        </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
